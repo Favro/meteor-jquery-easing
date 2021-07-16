@@ -4,11 +4,11 @@ version: "1.3.0",
 summary : "GSGD's jQuery easing plugin for Meteor"
 });
 
-Package.on_use(function(api) {
-api.versionsFrom('METEOR@1.10.2');
+Package.onUse(function(api) {
+api.versionsFrom('METEOR@2.3');
 
 api.use('jquery', 'client');
-api.add_files([
+api.addFiles([
 	'lib/js/jquery.easing.js'
 ], 'client');
 });
